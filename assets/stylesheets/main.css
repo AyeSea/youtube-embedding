@@ -44,6 +44,14 @@ table {
 	border-spacing: 0;
 }
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Body */
 
 body {
@@ -61,12 +69,91 @@ header {
 	border-bottom: 1px solid #e8e8e8;
 }
 
+header ul li {
+	display: inline-block;
+	vertical-align: middle;
+	/*border: 2px solid orange;*/
+}
+
+.logo {
+	margin-top: -5px;
+	width: 100px;
+}
+
+.menu-btn {
+	display: inline-block;
+	background: url("https://s.ytimg.com/yts/imgbin/www-hitchhiker-vflDqEBst.webp") -279px -391px;
+	width: 20px;
+	height: 20px;
+	border: 1px solid #fff;
+	margin-bottom: 5px;
+}
+
+.menu-btn:hover {
+	border: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+
+.search-box {
+	display: inline-block;
+	border: 1px solid #ccc;
+	margin-left: 100px;
+	margin-bottom: 5px;
+	width: 580px;
+	height: 30px;
+}
+
+.search-btn {
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	margin-top: -4px;
+	margin-left: -5px;
+	border: 1px solid #d3d3d3;
+	background: #f8f8f8 url("../images/search.jpg") 50% 50% no-repeat;
+	background-size: 16px 16px;
+}
+
+.search-btn:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+
+.btn {
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #d3d3d3;
+	margin-top: -4px;
+	font: 800 13px arial, sans-serif;	
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: gray;
+}
+
+.upload-btn {
+	margin-left: 850px;
+	height: 30px;
+	width: 70px;
+	background-color: #f8f8f8;
+	font-color: #000;
+}
+
+.signin-btn {
+	margin-left: 15px;
+	height: 30px;
+	width: 70px;
+	background-color: #167ac6;
+	font-color: #fff;
+}
+
 /* Main */
 
 .main {
 	margin: 0.5% 0;	
 	width: 100%;
-	border: 2px solid black;
 }
 
 /* Contents */
@@ -127,5 +214,4 @@ footer {
 	height: 102px;
 	background: #fff;
 	border-top: 1px solid #e8e8e8;
->>>>>>> test-template
 }
